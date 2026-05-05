@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Ateneu - Escuela con Cerebro</title>
+    <meta name="description" content="Institut Ateneu: Una propuesta de secundaria basada en neuroeducación. Metodología, evaluación, bienestar y comunidad en un entorno urbano innovador.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <span class="logo-text">INSTITUT ATENEU</span>
+            <span class="logo-tagline">Escuela con cerebro</span>
+        </div>
+        <nav id="desktop-nav">
+            <ul>
+                <li><a href="#hero" class="active">Inicio</a></li>
+                <li><a href="#metodologia">Metodología</a></li>
+                <li><a href="#evaluacion">Evaluación</a></li>
+                <li><a href="#bienestar">Bienestar</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#espacios">Espacios</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div id="mobile-menu-overlay">
+        <nav>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#metodologia">Metodología</a></li>
+                <li><a href="#evaluacion">Evaluación</a></li>
+                <li><a href="#bienestar">Bienestar</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#espacios">Espacios</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="scroll-container">
+        <!-- Panel 1: Hero -->
+        <section id="hero" class="panel active">
+            <div class="background-image" style="background-image: url('assets/hero.png');"></div>
+            <div class="content">
+                <h1 class="reveal-text">INSTITUT ATENEU</h1>
+                <h2 class="reveal-text-delay">Escuela con cerebro</h2>
+                <div class="scroll-indicator">
+                    <span>Desliza para explorar</span>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel 2: Metodología -->
+        <section id="metodologia" class="panel">
+            <div class="background-image" style="background-image: url('assets/metodologia.png');"></div>
+            <div class="content-overlay">
+                <div class="container">
+                    <div class="text-block">
+                        <h3>Metodología y currículum</h3>
+                        <p>Diseñamos el aprendizaje respetando los procesos neurocognitivos. Fomentamos la curiosidad, el pensamiento crítico y la colaboración en proyectos significativos que conectan con el mundo real.</p>
+                        <ul class="features">
+                            <li>Aprendizaje Basado en Proyectos (ABP)</li>
+                            <li>Atención a la diversidad cognitiva</li>
+                            <li>Integración tecnológica con propósito</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel 3: Evaluación -->
+        <section id="evaluacion" class="panel">
+            <div class="background-image" style="background-image: url('assets/evaluacion.png');"></div>
+            <div class="content-overlay">
+                <div class="container">
+                    <div class="text-block">
+                        <h3>¿Cómo evaluamos?</h3>
+                        <p>La evaluación es un proceso de acompañamiento. En lugar de calificar momentos puntuales, valoramos el progreso continuo, la metacognición y el crecimiento personal del alumno.</p>
+                        <div class="stat-grid">
+                            <div class="stat-item">
+                                <span class="stat-title">Feedback Constante</span>
+                                <p>Retroalimentación inmediata para mejorar el aprendizaje.</p>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-title">Autoevaluación</span>
+                                <p>Desarrollamos la capacidad de reflexionar sobre el propio proceso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel 4: Bienestar -->
+        <section id="bienestar" class="panel">
+            <div class="background-image" style="background-image: url('assets/bienestar.png');"></div>
+            <div class="content-overlay">
+                <div class="container">
+                    <div class="text-block">
+                        <h3>Bienestar Emocional</h3>
+                        <p>Un cerebro que no se siente seguro no puede aprender. Cuidamos el clima emocional, la salud mental y la pertenencia, creando un refugio de confianza para nuestros adolescentes.</p>
+                        <p class="quote">"La emoción es la puerta del aprendizaje."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel 5: Comunidad -->
+        <section id="comunidad" class="panel">
+            <div class="background-image" style="background-image: url('assets/comunidad.png');"></div>
+            <div class="content-overlay">
+                <div class="container">
+                    <div class="text-block">
+                        <h3>Comunidad Educativa</h3>
+                        <p>La escuela es un ecosistema. Integramos a las familias, al entorno urbano y a expertos externos para crear una red de apoyo que enriquece la experiencia educativa de cada estudiante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel 6: Espacios -->
+        <section id="espacios" class="panel">
+            <div class="background-image" style="background-image: url('assets/espacios.png');"></div>
+            <div class="content-overlay">
+                <div class="container">
+                    <div class="text-block">
+                        <h3>Espacios Neuro-Arquitectónicos</h3>
+                        <p>Nuestro centro es el tercer docente. Espacios flexibles, luz natural y diseño biofílico que reducen el estrés y potencian la atención sostenida.</p>
+                        <p>Ubicado en el corazón de la ciudad, pero con patios interiores naturalizados que invitan a la calma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="side-dots">
+        <a href="#hero" class="dot active" data-id="hero"></a>
+        <a href="#metodologia" class="dot" data-id="metodologia"></a>
+        <a href="#evaluacion" class="dot" data-id="evaluacion"></a>
+        <a href="#bienestar" class="dot" data-id="bienestar"></a>
+        <a href="#comunidad" class="dot" data-id="comunidad"></a>
+        <a href="#espacios" class="dot" data-id="espacios"></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
