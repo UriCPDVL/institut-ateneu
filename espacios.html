@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Espacios - Institut Ateneu</title>
+    <meta name="description" content="Descubre cómo la neuroarquitectura influye en el aprendizaje en el Institut Ateneu.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <style>
+        body {
+            overflow: auto; /* Allow normal scrolling on subpages */
+            background-color: #f9f9f9;
+        }
+        .subpage-header {
+            height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background: url('assets/espacios.png') no-repeat center center/cover;
+        }
+        .subpage-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+            padding: 0 20px;
+        }
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .section-container {
+            max-width: 900px;
+            margin: -50px auto 50px;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 2;
+        }
+        .intro-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+        }
+        .pillar {
+            margin-bottom: 40px;
+        }
+        .pillar h4 {
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            font-family: var(--font-heading);
+        }
+        .pillar p {
+            color: #555;
+            margin-bottom: 0;
+        }
+        .final-quote {
+            background: #f3f3f3;
+            padding: 40px;
+            border-left: 5px solid var(--primary-color);
+            margin-top: 60px;
+            font-style: italic;
+            font-size: 1.3rem;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        .back-home:hover {
+            transform: translateX(-5px);
+        }
+        @media (max-width: 768px) {
+            .section-container {
+                padding: 30px;
+                margin-top: -30px;
+                width: 95%;
+            }
+            .header-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header" class="scrolled">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <span class="logo-text" style="color: #1a1a1a;">INSTITUT ATENEU</span>
+                <span class="logo-tagline">Escuela con cerebro</span>
+            </a>
+        </div>
+        <nav id="desktop-nav">
+            <ul>
+                <li><a href="index.html#hero" style="color: #1a1a1a;">Inicio</a></li>
+                <li><a href="index.html#espacios" style="color: #1a1a1a;">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="subpage-header">
+        <div class="header-content">
+            <h1>Nuestros Espacios</h1>
+            <p>El "Tercer Maestro" en el Institut Ateneu</p>
+        </div>
+    </div>
+
+    <main class="section-container">
+        <p class="intro-text">
+            En el Institut Ateneu - Escuela con cerebro, entendemos que el aprendizaje no solo ocurre en la mente del alumno, sino en la interacción constante con su entorno. Basándonos en la neuroarquitectura, hemos diseñado un ecosistema educativo donde el espacio físico actúa como un agente activo que motiva, estimula y facilita los procesos cognitivos.
+        </p>
+
+        <h3>¿Por qué la arquitectura importa en la educación?</h3>
+        <p>La neurociencia ha demostrado que el diseño y las condiciones físicas de un centro escolar tienen una incidencia directa en las emociones y en la capacidad de procesar información. Los espacios no son meros contenedores; son herramientas didácticas que pueden promover la atención, la memoria y el bienestar.</p>
+
+        <br><br>
+        <h3>Fundamentos de nuestros espacios</h3>
+        <p>Nuestras instalaciones están diseñadas bajo los siguientes pilares de la neurociencia aplicada:</p>
+
+        <div class="pillar">
+            <h4>El Espacio como Reactivo Pedagógico</h4>
+            <p>Siguiendo la visión de Loris Malaguzzi, consideramos el entorno como el "tercer maestro". Un espacio bien preparado guía el aprendizaje de forma autónoma y flexible.</p>
+        </div>
+
+        <div class="pillar">
+            <h4>Confort Integral y Cognición</h4>
+            <p>Controlamos variables críticas como la luz natural, la temperatura (idealmente entre 20°C y 23°C) y la calidad del aire, factores que han demostrado mejorar significativamente el rendimiento en pruebas lingüísticas y numéricas.</p>
+        </div>
+
+        <div class="pillar">
+            <h4>Flexibilidad y Versatilidad</h4>
+            <p>Rompemos con el modelo de "aula cúbica" tradicional. Utilizamos mobiliario móvil y estructuras polivalentes que permiten transitar de la instrucción directa al trabajo colaborativo o la investigación individual en cuestión de minutos.</p>
+        </div>
+
+        <div class="pillar">
+            <h4>Diseño Biofílico</h4>
+            <p>La integración de la naturaleza en la escuela no es solo estética. El contacto con elementos naturales reduce el estrés, mejora las funciones ejecutivas y favorece un desarrollo armónico de los sistemas nervioso y endocrino.</p>
+        </div>
+
+        <div class="pillar">
+            <h4>Arquitectura Social y Empatía</h4>
+            <p>Diseñamos zonas que fomentan la interacción y la cooperación. Al colaborar, el cerebro libera neuromoduladores como la oxitocina y las endorfinas, que consolidan la memoria y aumentan la motivación.</p>
+        </div>
+
+        <div class="final-quote">
+            "No creamos espacios bonitos, sino espacios que contribuyan al cambio y al desarrollo del talento."
+        </div>
+
+        <p style="margin-top: 40px;">En el Institut Ateneu, cada rincón —desde los pasillos activos hasta las zonas de descanso— está pensado para que la arquitectura de nuestros espacios deje una huella positiva en la arquitectura cerebral de nuestro alumnado.</p>
+
+        <a href="index.html#espacios" class="back-home">← Volver a la página principal</a>
+    </main>
+
+    <script>
+        // Simple script to handle header transparency if needed, 
+        // though it's set to 'scrolled' by default for readability on white background.
+    </script>
+</body>
+</html>
