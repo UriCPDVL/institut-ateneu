@@ -52,7 +52,12 @@
     <main class="scroll-container">
         <!-- Panel 1: Hero -->
         <section id="hero" class="panel active">
-            <div class="background-image" style="background-image: url('assets/hero.png');"></div>
+            <video autoplay muted loop playsinline class="background-video" poster="assets/hero.png">
+                <source src="assets/hero-video.mp4" type="video/mp4">
+                <!-- Fallback if video not supported -->
+                <div class="background-image" style="background-image: url('assets/hero.png');"></div>
+            </video>
+            <div class="hero-overlay"></div>
             <div class="content">
                 <h1 class="reveal-text">INSTITUT ATENEU</h1>
                 <h2 class="reveal-text-delay">Escuela con cerebro</h2>
