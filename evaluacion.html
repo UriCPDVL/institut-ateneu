@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Evaluación - Institut Ateneu</title>
+    <meta name="description" content="Descubre cómo evaluamos en el Institut Ateneu: un proceso de acompañamiento, reflexión y metacognición.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <style>
+        body {
+            overflow: auto;
+            background-color: #f9f9f9;
+        }
+        .subpage-header {
+            height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background: url('assets/evaluacion.png') no-repeat center center/cover;
+        }
+        .subpage-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+            padding: 0 20px;
+        }
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .section-container {
+            max-width: 900px;
+            margin: -50px auto 50px;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 2;
+        }
+        .intro-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+        }
+        .pillar {
+            margin-bottom: 40px;
+        }
+        .pillar h4 {
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            font-family: var(--font-heading);
+        }
+        .pillar p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .pillar ul {
+            margin-left: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .pillar li {
+            margin-bottom: 10px;
+        }
+        .final-quote {
+            background: #f3f3f3;
+            padding: 40px;
+            border-left: 5px solid var(--primary-color);
+            margin-top: 60px;
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 1.5;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        .back-home:hover {
+            transform: translateX(-5px);
+        }
+        @media (max-width: 768px) {
+            .section-container {
+                padding: 30px;
+                margin-top: -30px;
+                width: 95%;
+            }
+            .header-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header" class="scrolled">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <span class="logo-text" style="color: #1a1a1a;">INSTITUT ATENEU</span>
+                <span class="logo-tagline">Escuela con cerebro</span>
+            </a>
+        </div>
+        <nav id="desktop-nav">
+            <ul>
+                <li><a href="index.html#hero" style="color: #1a1a1a;">Inicio</a></li>
+                <li><a href="index.html#evaluacion" style="color: #1a1a1a;">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="subpage-header">
+        <div class="header-content">
+            <h1>Nuestra Evaluación</h1>
+            <p>Evaluar es Acompañar el Aprendizaje</p>
+        </div>
+    </div>
+
+    <main class="section-container">
+        <p class="intro-text">
+            En el Institut Ateneu - Escuela con cerebro, entendemos que la evaluación no es el final del camino, sino el motor que impulsa el crecimiento. Nuestro sistema se aleja de la medición punitiva para convertirse en un proceso continuo de recogida de evidencias, diseñado para comprender cómo aprende cada alumno y tomar decisiones que optimicen su desarrollo integral.
+        </p>
+
+        <div class="pillar">
+            <h4>Un Proceso Conectado y Global</h4>
+            <p>No evaluamos momentos aislados; evaluamos recorridos. Integramos la evaluación inicial, de proceso y final como fases de un mismo viaje:</p>
+            <ul>
+                <li><strong>Más allá de la media:</strong> La evaluación final no es un simple cálculo aritmético de pruebas, sino una síntesis cualitativa del progreso individual.</li>
+                <li><strong>Evidencias para la mejora:</strong> Cada dato recogido sirve para ajustar nuestra intervención pedagógica y ofrecer al alumnado el apoyo que necesita en el momento preciso.</li>
+            </ul>
+        </div>
+
+        <div class="pillar">
+            <h4>Reflexión: Hacer Visible el Pensamiento</h4>
+            <p>Para que el aprendizaje sea profundo y duradero, el cerebro necesita detenerse y procesar. En nuestro modelo, la reflexión es la herramienta que permite pasar del recuerdo a la comprensión significativa:</p>
+            <ul>
+                <li><strong>Rutinas de pensamiento:</strong> Utilizamos diarios de aprendizaje, tickets de salida y pausas reflexivas para que el alumno identifique qué ha aprendido y qué dudas conserva.</li>
+                <li><strong>Conexión real:</strong> Buscamos que el alumnado conecte los contenidos con contextos reales, evitando la memorización aislada y otorgando sentido a cada nuevo concepto.</li>
+            </ul>
+        </div>
+
+        <div class="pillar">
+            <h4>Metacognición: El Arte de Aprender a Aprender</h4>
+            <p>Convertimos al alumnado en el verdadero protagonista de su proceso. La neurociencia nos enseña que un cerebro que entiende sus propios procesos es un cerebro más eficiente y autónomo:</p>
+            <ul>
+                <li><strong>Transparencia desde el inicio:</strong> Los estudiantes conocen los objetivos, criterios y ejemplos de calidad antes de empezar, lo que reduce la ansiedad y mejora el enfoque.</li>
+                <li><strong>Herramientas de autogestión:</strong> A través de portafolios, listas de verificación, autoevaluaciones y coevaluaciones entre iguales, el alumnado identifica sus fortalezas y desarrolla una mirada crítica y autónoma sobre su trabajo.</li>
+            </ul>
+        </div>
+
+        <div class="pillar">
+            <h4>Feedback Formativo: El Ciclo de la Mejora Continua</h4>
+            <p>El feedback es la pieza clave de nuestra arquitectura educativa. Se plantea como un ciclo constante de evidencias, retroalimentación y acción:</p>
+            <ul>
+                <li><strong>Acompañamiento personalizado:</strong> Ofrecemos feedback frecuente y claro a través de rúbricas, comentarios y diálogo directo, tanto del docente como entre compañeros.</li>
+                <li><strong>Orientación al futuro:</strong> En lugar de simplemente "cerrar" una etapa con una nota, nuestro feedback activa nuevos avances, asegurando una evaluación justa, inclusiva y centrada en el éxito de cada estudiante.</li>
+            </ul>
+        </div>
+
+        <div class="final-quote">
+            "La evaluación es el espejo que devuelve al alumno la imagen de su propio potencial, dándole las herramientas para superarse día a día".
+        </div>
+
+        <a href="index.html#evaluacion" class="back-home">← Volver a la página principal</a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
