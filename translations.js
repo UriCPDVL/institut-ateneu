@@ -1,6 +1,7 @@
 const translations = {
     es: {
         // Tagline & Nav
+        logo_name: "INSTITUTO ATENEA",
         tagline: "Escuela con cerebro",
         nav_home: "Inicio",
         nav_metodologia: "Metodología",
@@ -208,6 +209,7 @@ const translations = {
     },
     ca: {
         // Tagline & Nav
+        logo_name: "INSTITUT ATENEA",
         tagline: "Escola amb cervell",
         nav_home: "Inici",
         nav_metodologia: "Metodologia",
