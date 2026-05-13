@@ -17,18 +17,24 @@
     <header id="main-header">
         <div class="logo">
             <span class="logo-text">INSTITUTO ATENEA</span>
-            <span class="logo-tagline">Escuela con cerebro</span>
+            <span class="logo-tagline" data-i18n="tagline">Escuela con cerebro</span>
         </div>
         <nav id="desktop-nav">
             <ul>
-                <li><a href="#hero" class="active">Inicio</a></li>
-                <li><a href="#metodologia">Metodología</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
-                <li><a href="#bienestar">Bienestar</a></li>
-                <li><a href="#comunidad">Comunidad</a></li>
-                <li><a href="#espacios">Espacios</a></li>
+                <li><a href="#hero" class="active" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#metodologia" data-i18n="nav_metodologia">Metodología</a></li>
+                <li><a href="#evaluacion" data-i18n="nav_evaluacion">Evaluación</a></li>
+                <li><a href="#bienestar" data-i18n="nav_bienestar">Bienestar</a></li>
+                <li><a href="#comunidad" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="#espacios" data-i18n="nav_espacios">Espacios</a></li>
             </ul>
         </nav>
+        <div class="lang-selector">
+            <select id="lang-select" aria-label="Seleccionar idioma">
+                <option value="es">ES</option>
+                <option value="ca">CA</option>
+            </select>
+        </div>
         <button id="menu-toggle" aria-label="Abrir menú">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -39,12 +45,12 @@
     <div id="mobile-menu-overlay">
         <nav>
             <ul>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#metodologia">Metodología</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
-                <li><a href="#bienestar">Bienestar</a></li>
-                <li><a href="#comunidad">Comunidad</a></li>
-                <li><a href="#espacios">Espacios</a></li>
+                <li><a href="#hero" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#metodologia" data-i18n="nav_metodologia">Metodología</a></li>
+                <li><a href="#evaluacion" data-i18n="nav_evaluacion">Evaluación</a></li>
+                <li><a href="#bienestar" data-i18n="nav_bienestar">Bienestar</a></li>
+                <li><a href="#comunidad" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="#espacios" data-i18n="nav_espacios">Espacios</a></li>
             </ul>
         </nav>
     </div>
@@ -60,9 +66,9 @@
             <div class="hero-overlay"></div>
             <div class="content">
                 <h1 class="reveal-text">INSTITUTO ATENEA</h1>
-                <h2 class="reveal-text-delay">Escuela con cerebro</h2>
+                <h2 class="reveal-text-delay" data-i18n="hero_subtitle">Escuela con cerebro</h2>
                 <div class="scroll-indicator">
-                    <span>Desliza para explorar</span>
+                    <span data-i18n="hero_scroll">Desliza para explorar</span>
                     <div class="arrow"></div>
                 </div>
             </div>
@@ -74,14 +80,14 @@
             <div class="content-overlay">
                 <div class="container">
                     <div class="text-block">
-                        <h3>Metodología y currículum</h3>
-                        <p>Concebimos el aprendizaje como un proceso integral y dinámico inspirado en la neuroeducación. Organizamos nuestro currículum a través de cinco pilares interconectados guiados por la metacognición.</p>
+                        <h3 data-i18n="metodologia_title">Metodología y currículum</h3>
+                        <p data-i18n="metodologia_desc">Concebimos el aprendizaje como un proceso integral y dinámico inspirado en la neuroeducación. Organizamos nuestro currículum a través de cinco pilares interconectados guiados por la metacognición.</p>
                         <ul class="features">
-                            <li>Aprender a SER y ESTAR</li>
-                            <li>Aprender a EXPLORAR y CO-CREAR</li>
-                            <li>Aprender a TRANSFORMAR</li>
+                            <li data-i18n="metodologia_feat1">Aprender a SER y ESTAR</li>
+                            <li data-i18n="metodologia_feat2">Aprender a EXPLORAR y CO-CREAR</li>
+                            <li data-i18n="metodologia_feat3">Aprender a TRANSFORMAR</li>
                         </ul>
-                        <a href="metodologia.html" class="btn-more">Saber más sobre metodología</a>
+                        <a href="metodologia.html" class="btn-more" data-i18n="metodologia_btn">Saber más sobre metodología</a>
                     </div>
                 </div>
             </div>
@@ -93,19 +99,19 @@
             <div class="content-overlay">
                 <div class="container">
                     <div class="text-block">
-                        <h3>¿Cómo evaluamos?</h3>
-                        <p>La evaluación es un proceso de acompañamiento. En lugar de calificar momentos puntuales, valoramos el progreso continuo, la metacognición y el crecimiento personal del alumno.</p>
+                        <h3 data-i18n="evaluacion_title">¿Cómo evaluamos?</h3>
+                        <p data-i18n="evaluacion_desc">La evaluación es un proceso de acompañamiento. En lugar de calificar momentos puntuales, valoramos el progreso continuo, la metacognición y el crecimiento personal del alumno.</p>
                         <div class="stat-grid">
                             <div class="stat-item">
-                                <span class="stat-title">Feedback Constante</span>
-                                <p>Retroalimentación inmediata para mejorar el aprendizaje.</p>
+                                <span class="stat-title" data-i18n="evaluacion_stat1_title">Feedback Constante</span>
+                                <p data-i18n="evaluacion_stat1_desc">Retroalimentación inmediata para mejorar el aprendizaje.</p>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-title">Autoevaluación</span>
-                                <p>Desarrollamos la capacidad de reflexionar sobre el propio proceso.</p>
+                                <span class="stat-title" data-i18n="evaluacion_stat2_title">Autoevaluación</span>
+                                <p data-i18n="evaluacion_stat2_desc">Desarrollamos la capacidad de reflexionar sobre el propio proceso.</p>
                             </div>
                         </div>
-                        <a href="evaluacion.html" class="btn-more">Saber más sobre la evaluación</a>
+                        <a href="evaluacion.html" class="btn-more" data-i18n="evaluacion_btn">Saber más sobre la evaluación</a>
                     </div>
                 </div>
             </div>
@@ -117,10 +123,10 @@
             <div class="content-overlay">
                 <div class="container">
                     <div class="text-block">
-                        <h3>Bienestar Emocional</h3>
-                        <p>Un cerebro que no se siente seguro no puede aprender. Cuidamos el clima emocional, la salud mental y la pertenencia, creando un refugio de confianza para nuestros adolescentes.</p>
-                        <p class="quote">"La emoción es la puerta del aprendizaje."</p>
-                        <a href="bienestar.html" class="btn-more">Saber más sobre bienestar</a>
+                        <h3 data-i18n="bienestar_title">Bienestar Emocional</h3>
+                        <p data-i18n="bienestar_desc">Un cerebro que no se siente seguro no puede aprender. Cuidamos el clima emocional, la salud mental y la pertenencia, creando un refugio de confianza para nuestros adolescentes.</p>
+                        <p class="quote" data-i18n="bienestar_quote">"La emoción es la puerta del aprendizaje."</p>
+                        <a href="bienestar.html" class="btn-more" data-i18n="bienestar_btn">Saber más sobre bienestar</a>
                     </div>
                 </div>
             </div>
@@ -132,9 +138,9 @@
             <div class="content-overlay">
                 <div class="container">
                     <div class="text-block">
-                        <h3>Comunidad Educativa</h3>
-                        <p>La escuela es un ecosistema. Integramos a las familias, al entorno urbano y a expertos externos para crear una red de apoyo que enriquece la experiencia educativa de cada estudiante.</p>
-                        <a href="comunidad.html" class="btn-more">Saber más sobre la comunidad</a>
+                        <h3 data-i18n="comunidad_title">Comunidad Educativa</h3>
+                        <p data-i18n="comunidad_desc">La escuela es un ecosistema. Integramos a las familias, al entorno urbano y a expertos externos para crear una red de apoyo que enriquece la experiencia educativa de cada estudiante.</p>
+                        <a href="comunidad.html" class="btn-more" data-i18n="comunidad_btn">Saber más sobre la comunidad</a>
                     </div>
                 </div>
             </div>
@@ -146,10 +152,10 @@
             <div class="content-overlay">
                 <div class="container">
                     <div class="text-block">
-                        <h3>Espacios Neuro-Arquitectónicos</h3>
-                        <p>Nuestro centro es el tercer docente. Espacios flexibles, luz natural y diseño biofílico que reducen el estrés y potencian la atención sostenida.</p>
-                        <p>Ubicado en el corazón de la ciudad, pero con patios interiores naturalizados que invitan a la calma.</p>
-                        <a href="espacios.html" class="btn-more">Saber más sobre nuestros espacios</a>
+                        <h3 data-i18n="espacios_title">Espacios Neuro-Arquitectónicos</h3>
+                        <p data-i18n="espacios_desc1">Nuestro centro es el tercer docente. Espacios flexibles, luz natural y diseño biofílico que reducen el estrés y potencian la atención sostenida.</p>
+                        <p data-i18n="espacios_desc2">Ubicado en el corazón de la ciudad, pero con patios interiores naturalizados que invitan a la calma.</p>
+                        <a href="espacios.html" class="btn-more" data-i18n="espacios_btn">Saber más sobre nuestros espacios</a>
                     </div>
                 </div>
             </div>
@@ -165,6 +171,7 @@
         <a href="#espacios" class="dot" data-id="espacios"></a>
     </div>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

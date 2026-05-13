@@ -23,16 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateActiveState(id);
                 
                 // Update Header Style
-                if (id !== 'hero') {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
+                if (header) {
+                    if (id !== 'hero') {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
                 }
             }
         });
     }, observerOptions);
 
-    panels.forEach(panel => observer.observe(panel));
+    if (panels.length > 0) {
+        panels.forEach(panel => observer.observe(panel));
+    }
 
     function updateActiveState(id) {
         navLinks.forEach(link => {
@@ -44,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         dots.forEach(dot => {
             dot.classList.remove('active');
-            if (dot.dataset.id === id) {
+            if (dot.dataset && dot.dataset.id === id) {
                 dot.classList.add('active');
             }
         });
@@ -55,11 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
             // Si el enlace es interno (empieza por #) hacemos scroll suave
-            if (href.startsWith('#')) {
+            if (href && href.startsWith('#')) {
                 e.preventDefault();
-                document.querySelector(href).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetEl = document.querySelector(href);
+                if (targetEl) {
+                    targetEl.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             }
             // De lo contrario, dejamos que el navegador navegue normalmente a la URL
         });
@@ -68,27 +75,66 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-    const mobileLinks = mobileMenuOverlay.querySelectorAll('a');
+    const mobileLinks = mobileMenuOverlay ? mobileMenuOverlay.querySelectorAll('a') : [];
 
     function toggleMenu() {
-        menuToggle.classList.toggle('active');
-        mobileMenuOverlay.classList.toggle('active');
-        // Prevent scrolling when menu is open
-        document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+        if (menuToggle && mobileMenuOverlay) {
+            menuToggle.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+            // Prevent scrolling when menu is open
+            document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+        }
     }
 
-    menuToggle.addEventListener('click', toggleMenu);
+    if (menuToggle) {
+        menuToggle.addEventListener('click', toggleMenu);
+    }
 
     // Close menu when a link is clicked
     mobileLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
-            toggleMenu();
-            
-            const targetId = link.getAttribute('href');
-            document.querySelector(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                toggleMenu();
+                
+                const targetEl = document.querySelector(href);
+                if (targetEl) {
+                    targetEl.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
         });
     });
+
+    // Multi-language (i18n) Handler
+    const savedLang = localStorage.getItem('app_lang') || 'es';
+    document.documentElement.lang = savedLang;
+    applyLanguage(savedLang);
+
+    const langSelect = document.getElementById('lang-select');
+    if (langSelect) {
+        langSelect.value = savedLang;
+
+        langSelect.addEventListener('change', (e) => {
+            const newLang = e.target.value;
+            localStorage.setItem('app_lang', newLang);
+            document.documentElement.lang = newLang;
+            applyLanguage(newLang);
+        });
+    }
+
+    function applyLanguage(lang) {
+        if (typeof translations !== 'undefined' && translations[lang]) {
+            const dict = translations[lang];
+            // Buscar todos los elementos que tengan el atributo data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.innerHTML = dict[key];
+                }
+            });
+        }
+    }
 });

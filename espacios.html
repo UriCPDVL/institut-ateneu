@@ -109,73 +109,56 @@
         <div class="logo">
             <a href="index.html" style="text-decoration: none;">
                 <span class="logo-text" style="color: #1a1a1a;">INSTITUTO ATENEA</span>
-                <span class="logo-tagline">Escuela con cerebro</span>
+                <span class="logo-tagline" data-i18n="tagline">Escuela con cerebro</span>
             </a>
         </div>
         <nav id="desktop-nav">
             <ul>
-                <li><a href="index.html#hero" style="color: #1a1a1a;">Inicio</a></li>
-                <li><a href="index.html#espacios" style="color: #1a1a1a;">Volver</a></li>
+                <li><a href="index.html#hero" style="color: #1a1a1a;" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="index.html#espacios" style="color: #1a1a1a;" data-i18n="nav_back">Volver</a></li>
             </ul>
         </nav>
+        <div class="lang-selector">
+            <select id="lang-select" aria-label="Seleccionar idioma">
+                <option value="es">ES</option>
+                <option value="ca">CA</option>
+            </select>
+        </div>
     </header>
 
     <div class="subpage-header">
         <div class="header-content">
             <h1>Nuestros Espacios</h1>
-            <p>El "Tercer Maestro" en el Instituto Atenea</p>
+            <p data-i18n="sp_espacios_subtitle">El "Tercer Maestro" en el Instituto Atenea</p>
         </div>
     </div>
 
     <main class="section-container">
-        <p class="intro-text">
+        <p class="intro-text" data-i18n="sp_espacios_intro">
             En el Instituto Atenea - Escuela con cerebro, entendemos que el aprendizaje no solo ocurre en la mente del alumno, sino en la interacción constante con su entorno. Basándonos en la neuroarquitectura, hemos diseñado un ecosistema educativo donde el espacio físico actúa como un agente activo que motiva, estimula y facilita los procesos cognitivos.
         </p>
 
-        <h3>¿Por qué la arquitectura importa en la educación?</h3>
-        <p>La neurociencia ha demostrado que el diseño y las condiciones físicas de un centro escolar tienen una incidencia directa en las emociones y en la capacidad de procesar información. Los espacios no son meros contenedores; son herramientas didácticas que pueden promover la atención, la memoria y el bienestar.</p>
-
-        <br><br>
-        <h3>Fundamentos de nuestros espacios</h3>
-        <p>Nuestras instalaciones están diseñadas bajo los siguientes pilares de la neurociencia aplicada:</p>
-
         <div class="pillar">
-            <h4>El Espacio como Reactivo Pedagógico</h4>
-            <p>Siguiendo la visión de Loris Malaguzzi, consideramos el entorno como el "tercer maestro". Un espacio bien preparado guía el aprendizaje de forma autónoma y flexible.</p>
+            <h4 data-i18n="sp_espacios_h4_1">Luz Natural y Ritmos Circadianos</h4>
+            <p data-i18n="sp_espacios_p_1">Maximizamos la entrada de luz solar para sincronizar los ritmos biológicos de los estudiantes, mejorando su estado de alerta natural y reduciendo la fatiga visual y mental durante la jornada.</p>
         </div>
 
         <div class="pillar">
-            <h4>Confort Integral y Cognición</h4>
-            <p>Controlamos variables críticas como la luz natural, la temperatura (idealmente entre 20°C y 23°C) y la calidad del aire, factores que han demostrado mejorar significativamente el rendimiento en pruebas lingüísticas y numéricas.</p>
+            <h4 data-i18n="sp_espacios_h4_2">Flexibilidad y Movimiento</h4>
+            <p data-i18n="sp_espacios_p_2">El cerebro necesita movimiento para aprender. Nuestras aulas cuentan con mobiliario modular y ergonómico que permite transicionar rápidamente de un trabajo individual de alta concentración a dinámicas de aprendizaje cooperativo.</p>
         </div>
 
         <div class="pillar">
-            <h4>Flexibilidad y Versatilidad</h4>
-            <p>Rompemos con el modelo de "aula cúbica" tradicional. Utilizamos mobiliario móvil y estructuras polivalentes que permiten transitar de la instrucción directa al trabajo colaborativo o la investigación individual en cuestión de minutos.</p>
+            <h4 data-i18n="sp_espacios_h4_3">Diseño Biofílico y Calma</h4>
+            <p data-i18n="sp_espacios_p_3">Integramos la naturaleza en el interior: paredes vegetales, materiales nobles como la madera y vistas a nuestros patios naturalizados. Estos elementos reducen de forma medible los niveles de cortisol (estrés) y aumentan la capacidad de atención sostenida.</p>
         </div>
 
-        <div class="pillar">
-            <h4>Diseño Biofílico</h4>
-            <p>La integración de la naturaleza en la escuela no es solo estética. El contacto con elementos naturales reduce el estrés, mejora las funciones ejecutivas y favorece un desarrollo armónico de los sistemas nervioso y endocrino.</p>
-        </div>
+        <p style="margin-top: 40px; line-height: 1.7; color: #555;" data-i18n="sp_espacios_outro">En el Instituto Atenea, cada rincón —desde los pasillos activos hasta las zonas de descanso— está pensado para que la arquitectura de nuestros espacios deje una huella positiva en la arquitectura cerebral de nuestro alumnado.</p>
 
-        <div class="pillar">
-            <h4>Arquitectura Social y Empatía</h4>
-            <p>Diseñamos zonas que fomentan la interacción y la cooperación. Al colaborar, el cerebro libera neuromoduladores como la oxitocina y las endorfinas, que consolidan la memoria y aumentan la motivación.</p>
-        </div>
-
-        <div class="final-quote">
-            "No creamos espacios bonitos, sino espacios que contribuyan al cambio y al desarrollo del talento."
-        </div>
-
-        <p style="margin-top: 40px;">En el Instituto Atenea, cada rincón —desde los pasillos activos hasta las zonas de descanso— está pensado para que la arquitectura de nuestros espacios deje una huella positiva en la arquitectura cerebral de nuestro alumnado.</p>
-
-        <a href="index.html#espacios" class="back-home">← Volver a la página principal</a>
+        <a href="index.html#espacios" class="back-home" data-i18n="back_home">← Volver a la página principal</a>
     </main>
 
-    <script>
-        // Simple script to handle header transparency if needed, 
-        // though it's set to 'scrolled' by default for readability on white background.
-    </script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
