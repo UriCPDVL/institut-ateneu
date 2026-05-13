@@ -296,6 +296,79 @@ p {
     color: var(--primary-color);
 }
 
+/* Schedule Table Premium Styles */
+.schedule-wrapper {
+    margin: 50px 0;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 16px 20px;
+    border: 1px solid #eaeaea;
+    vertical-align: middle;
+}
+
+.schedule-table thead th {
+    background-color: #3b6b74; /* Elegant teal */
+    color: white;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.schedule-table tbody th {
+    background-color: #fcebc9; /* Soft warm tone for time slots */
+    color: #2c3e50;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-align: center;
+    width: 15%;
+}
+
+.schedule-table td {
+    color: #444;
+    line-height: 1.5;
+}
+
+.schedule-table td.center {
+    text-align: center;
+}
+
+.schedule-table tr.break-row td {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    text-align: center;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.schedule-note {
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.6;
+    margin-top: 15px;
+    background: #fdfdfd;
+    padding: 15px 20px;
+    border-left: 3px solid #3b6b74;
+    border-radius: 4px;
+}
+
 /* Side Dots */
 .side-dots {
     position: fixed;
