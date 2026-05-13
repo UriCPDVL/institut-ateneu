@@ -53,11 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth scroll for dots and nav links
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            document.querySelector(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const href = link.getAttribute('href');
+            // Si el enlace es interno (empieza por #) hacemos scroll suave
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+            // De lo contrario, dejamos que el navegador navegue normalmente a la URL
         });
     });
 
