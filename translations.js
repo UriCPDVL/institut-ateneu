@@ -191,6 +191,7 @@ const translations = {
         sch_r3_td: "<strong>RECREO</strong>",
         
         sch_r4_th: "11:30h a 13:30h",
+        sch_r4_th_merged: "11:30h a<br>13:30h",
         sch_r4_lvl1: "1º y 2º",
         sch_r4_lvl2: "3º y 4º",
         sch_r4_mon1: "ABR<br>científico-tecnológico",
@@ -413,6 +414,7 @@ const translations = {
         sch_r3_td: "<strong>ESBARJO</strong>",
         
         sch_r4_th: "11:30h a 13:30h",
+        sch_r4_th_merged: "11:30h a<br>13:30h",
         sch_r4_lvl1: "1r i 2n",
         sch_r4_lvl2: "3r i 4t",
         sch_r4_mon1: "ABR<br>cientificotecnològic",
