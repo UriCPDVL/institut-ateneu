@@ -133,6 +133,7 @@ const translations = {
         sp_met_p2_l3: "Juegos cooperativos y retos compartidos.",
         sp_met_p2_l4: "Espacios de convivencia y cohesión grupal.",
         sp_met_p2_l5: "Comunicación emocional, oral, visual y digital.",
+        sp_met_propuestas_title: "Organización de las propuestas metodológicas del centro",
         
         sp_met_p3_title: "3. Aprender a EXPLORAR",
         sp_met_p3_sub: "Curiosidad, pensamiento crítico y aprendizaje profundo",
@@ -358,6 +359,7 @@ const translations = {
         sp_met_p2_l3: "Jocs cooperatius i reptes compartits.",
         sp_met_p2_l4: "Espais de convivència i cohesió grupal.",
         sp_met_p2_l5: "Comunicació emocional, oral, visual i digital.",
+        sp_met_propuestas_title: "Organització de les propostes metodològiques del centre",
         
         sp_met_p3_title: "3. Aprendre a EXPLORAR",
         sp_met_p3_sub: "Curiositat, pensament crític i aprenentatge profund",
