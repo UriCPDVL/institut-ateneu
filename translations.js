@@ -217,6 +217,7 @@ const translations = {
         pdf_title: "Proyecto Educativo de Centro (PEC)",
         pdf_fallback: "Tu navegador no soporta la previsualización directa de archivos PDF.",
         pdf_btn: "📥 Descargar o abrir PDF a pantalla completa",
+        pdf_comunidad_title: "Pilares Básicos de Comunidad",
         
         sp_met_q_title: "Una escuela conectada con la vida",
         sp_met_q_p1: "Nuestro currículum no entiende el aprendizaje como algo fragmentado o aislado. Cada experiencia educativa busca conectar emoción, pensamiento, creatividad y acción para acompañar al alumnado en el desarrollo de competencias para la vida.",
@@ -440,6 +441,7 @@ const translations = {
         pdf_title: "Projecte Educatiu de Centre (PEC)",
         pdf_fallback: "El teu navegador no suporta la previsualització directa de fitxers PDF.",
         pdf_btn: "📥 Descarregar o obrir PDF a pantalla completa",
+        pdf_comunidad_title: "Pilars Bàsics de Comunitat",
         
         sp_met_q_title: "Una escola connectada amb la vida",
         sp_met_q_p1: "El nostre currículum no entén l'aprenentatge com una cosa fragmentada o aïllada. Cada experiència educativa busca connectar emoció, pensament, creativitat i acció per acompanyar l'alumnat en el desenvolupament de competències per a la vida.",
