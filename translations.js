@@ -214,7 +214,8 @@ const translations = {
         
         sch_note: "<strong>*Las Mentorías</strong> son espacios de acompañamiento con el tutor/a donde se hacen propuestas de cohesión grupal a través de juegos cooperativos, rutinas de pensamiento y/o pequeños retos cognitivos con el objetivo principal de generar vínculos sanos y <strong>bienestar social</strong> con el grupo de referencia, teniendo en cuenta las necesidades emergentes del alumnado.",
         
-        pdf_title: "Proyecto Educativo de Centro (PEC)",
+        pdf_title: "Los pilares de Atenea",
+        more_info: "Para más información",
         pdf_fallback: "Tu navegador no soporta la previsualización directa de archivos PDF.",
         pdf_btn: "📥 Descargar o abrir PDF a pantalla completa",
         pdf_comunidad_title: "Pilares Básicos de Comunidad",
@@ -438,7 +439,8 @@ const translations = {
         
         sch_note: "<strong>*Les Mentories</strong> són espais d'acompanyament amb el tutor/a on es fan propostes de cohesió grupal a través de jocs cooperatius, rutines de pensament i/o petits reptes cognitius amb l'objectiu principal de generar vincles sans i <strong>benestar social</strong> amb el grup de referència, tenint en compte les necessitats emergents de l'alumnat.",
         
-        pdf_title: "Projecte Educatiu de Centre (PEC)",
+        pdf_title: "Els pilars d'Atenea",
+        more_info: "Per a més informació",
         pdf_fallback: "El teu navegador no suporta la previsualització directa de fitxers PDF.",
         pdf_btn: "📥 Descarregar o obrir PDF a pantalla completa",
         pdf_comunidad_title: "Pilars Bàsics de Comunitat",
