@@ -137,4 +137,27 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // Lightbox Logic
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
+    const zoomableImgs = document.querySelectorAll('.zoom-hint');
+
+    if (lightbox && lightboxImg) {
+        zoomableImgs.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scroll
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            // If on a subpage where scrolling is handled by body (not scroll-container)
+            if (!document.querySelector('.scroll-container')) {
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
 });
